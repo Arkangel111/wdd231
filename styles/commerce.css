@@ -43,36 +43,29 @@ header {
     gap: 15px;
 }
 
-/* Footer Styles
+/* Hero Section Styles
    ========================================================================== */
-footer {
-    display: flex;
-    justify-content: space-between; /* Align items to the left and right */
-    align-items: center;
-    position: relative; /* Ensure footer is positioned correctly */
-    bottom: 0; /* Position at the bottom */
-    width: 100%; /* Full width */
-    background-color: #d0d0d0; /* Light background color for footer */
+#hero {
+    text-align: center; /* Center the hero content */
 }
 
-footer > div {
-    flex: 1;
+#hero img {
+    width: 100%; /* Make the hero image responsive */
+    height: auto; /* Maintain aspect ratio */
 }
 
-footer .middle {
-    text-align: center;
-}
-
-footer .icon {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
-}
-
-/* New Section Styles
+/* Main Content Section Styles
    ========================================================================== */
+main {
+    padding: 20px; /* Add padding to the main content */
+}
 
-/* Container to align cards horizontally */
+/* Home Section Styles
+   ========================================================================== */
+#home {
+    margin-bottom: 20px; /* Space below the home section */
+}
+
 .card-container {
     display: flex;
     justify-content: space-between; /* Spread them evenly */
@@ -85,6 +78,7 @@ footer .icon {
     flex: 1; /* Each card takes equal space */
     background-color: #d3d3d3; /* Light gray background */
     padding: 15px;
+    border-radius: 10px; /* Rounded corners */
     text-align: center;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
@@ -95,72 +89,76 @@ footer .icon {
     color: white;
     padding: 10px;
     margin: -15px -15px 15px -15px; /* Extend title to card edges */
-}
-/* Container for the business cards */
-/* Container for the business cards */
-.card-container2 {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-/* Card styling for the businesses section */
-.card2 {
-  flex: 1;
-  background-color: #d3d3d3; /* Light gray background */
-  padding: 15px;
-  border-radius: 10px; /* Rounded corners on all 4 corners */
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-/* Card header for the title */
-.card-header {
-  background-color: #7a7a7a; /* Dark gray background for title */
-  padding: 10px;
-  margin: -15px -15px 15px -15px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.card2 h2 {
-  color: rgb(0, 0, 0);
-  font-size: 1.5em; /* Larger font size for business name */
-  margin: 0;
-}
-
-/* Tagline styling */
-.card2 .tagline {
-  display: block; /* Tagline on a new line */
-  font-size: 0.8em; /* Smaller font size for tagline */
-  color: #090909; /* Light gray color for tagline */
-}
-
-/* Flexbox for the card content */
-.card-content {
-  display: flex;
-  align-items: center;
-  gap: 15px; /* Space between image and text */
-}
-
-/* Card image styling */
-.card-image {
-  border-radius: 50%; /* Round the image */
-  width: 50px;
-  height: 50px;
-}
-
-/* Text content styling */
-.text-content {
-  flex: 1; /* Take the remaining space for the text */
-}
-
-/* Card text styling */
-.card2 p {
-  margin: 5px 0;
-}
-/* Document
+/* Businesses Section Styles
    ========================================================================== */
+#businesses {
+    margin-top: 20px; /* Space above the businesses section */
+}
+
+.card-container2 {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    gap: 20px; /* Space between cards */
+}
+
+/* Card2 styling */
+.card2 {
+    flex: 1; /* Each card takes equal space */
+    background-color: #f0f0f0; /* Light background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+/* Card header styling for card2 */
+.card-header {
+    background-color: #7a7a7a; /* Dark gray title bar */
+    color: white;
+    padding: 10px;
+}
+
+/* Card content styling */
+.card-content {
+    padding: 15px; /* Padding inside card content */
+}
+
+/* Footer Styles
+   ========================================================================== */
+   
+footer {
+    background-color: #f0f0f0; /* Light background color for footer */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Center the text */
+}
+
+.left, .middle, .right {
+    display: inline-block; /* Align items horizontally */
+    vertical-align: top; /* Align items to the top */
+    margin: 0 10px; /* Space between sections */
+}
+
+.left {
+    width: 30%; /* Width for left section */
+}
+
+.middle {
+    width: 40%; /* Width for middle section */
+}
+
+.right {
+    width: 30%; /* Width for right section */
+}
+
+.icon {
+    width: 30px; /* Set icon size */
+    height: 30px; /* Set icon size */
+    margin: 0 5px; /* Space between icons */
+}
+
 
 /**
  * 1. Correct the line height in all browsers.
