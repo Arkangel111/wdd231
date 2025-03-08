@@ -11,7 +11,31 @@
 
 </head>
 <body>
-    <header id="header"></header>
+    <!-- Commented out existing header for future implementation -->
+    <!-- <header id="header"></header> -->
+    <head>
+        <link rel="stylesheet" href="styles/commerce.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+    </head>
+    <header>
+        <div class="left-header">
+            <img src="https://fakeimg.pl/30x30?text=img&font_size=20" alt="Logo">
+            <div>
+                <h1>Timbuktu</h1>
+                <h2>Chamber of Commerce</h2>
+            </div>
+        </div>
+        <nav class="right-header">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><span role="button" aria-label="Toggle Light/Dark Mode">🌙</span></li>
+            </ul>
+        </nav>
+    </header>
+
     <div id="hero image1">
             <img src="https://fakeimg.pl/1800x300/66aabd/000000?text=Main+img+here&font_size=40">
     </div>
@@ -35,10 +59,12 @@
     <div id="businesses">
         <div class="card-container2">
             <div class="card2">
+                <div class="card-header">
+                    <h2><span class="business-name">Business Name</span> <span class="tagline">Business Tag Line</span></h2>
+                </div>
                 <div class="card-content">
                     <img src="https://fakeimg.pl/50x50/66aabd/000000?text=img&font_size=40" alt="Business Image" class="card-image">
                     <div class="text-content">
-                        <h2><span class="business-name">Business Name</span> <span class="tagline">Business Tag Line</span></h2>
                         <p>EMAIL: info@gmail.com</p>
                         <p>PHONE: 123-456-7890</p>
                         <p>URL: mybusiness.com</p>
@@ -46,10 +72,12 @@
                 </div>
             </div>
             <div class="card2">
+                <div class="card-header">
+                    <h2><span class="business-name">Business Name</span> <span class="tagline">Business Tag Line</span></h2>
+                </div>
                 <div class="card-content">
                     <img src="https://fakeimg.pl/50x50/66aabd/000000?text=img&font_size=40" alt="Business Image" class="card-image">
                     <div class="text-content">
-                        <h2><span class="business-name">Business Name</span> <span class="tagline">Business Tag Line</span></h2>
                         <p>EMAIL: info@gmail.com</p>
                         <p>PHONE: 123-456-7890</p>
                         <p>URL: mybusiness.com</p>
@@ -57,10 +85,12 @@
                 </div>
             </div>
             <div class="card2">
+                <div class="card-header">
+                    <h2><span class="business-name">Business Name</span> <span class="tagline">Business Tag Line</span></h2>
+                </div>
                 <div class="card-content">
                     <img src="https://fakeimg.pl/50x50/66aabd/000000?text=img&font_size=40" alt="Business Image" class="card-image">
                     <div class="text-content">
-                        <h2><span class="business-name">Business Name</span> <span class="tagline">Business Tag Line</span></h2>
                         <p>EMAIL: info@gmail.com</p>
                         <p>PHONE: 123-456-7890</p>
                         <p>URL: mybusiness.com</p>
