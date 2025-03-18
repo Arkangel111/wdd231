@@ -7,6 +7,10 @@ body {
     color: #e0e0e0;
     text-align: center;
 }
+.profile-img {
+    height: 30px;
+    margin-right: 10px;
+}
 
 /* Layout Styles */
 main {
