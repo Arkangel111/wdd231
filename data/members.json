@@ -1,0 +1,66 @@
+[
+    {
+      "name": "Company A",
+      "address": "123 Main St, Hindman, KY",
+      "phone": "123-456-7890",
+      "website": "https://www.companya.com",
+      "image": "company-a.png",
+      "membershipLevel": 1,
+      "description": "A description of Company A"
+    },
+    {
+      "name": "Company B",
+      "address": "456 Oak St, Hindman, KY",
+      "phone": "987-654-3210",
+      "website": "https://www.companyb.com",
+      "image": "company-b.png",
+      "membershipLevel": 2,
+      "description": "A description of Company B"
+    },
+    {
+      "name": "Company C",
+      "address": "789 Pine St, Hindman, KY",
+      "phone": "555-555-5555",
+      "website": "https://www.companyc.com",
+      "image": "company-c.png",
+      "membershipLevel": 3,
+      "description": "A description of Company C"
+    },
+    {
+      "name": "Company D",
+      "address": "321 Maple St, Hindman, KY",
+      "phone": "222-333-4444",
+      "website": "https://www.companyd.com",
+      "image": "company-d.png",
+      "membershipLevel": 1,
+      "description": "A description of Company D"
+    },
+    {
+      "name": "Company E",
+      "address": "654 Birch St, Hindman, KY",
+      "phone": "111-222-3333",
+      "website": "https://www.companye.com",
+      "image": "company-e.png",
+      "membershipLevel": 2,
+      "description": "A description of Company E"
+    },
+    {
+      "name": "Company F",
+      "address": "987 Cedar St, Hindman, KY",
+      "phone": "444-555-6666",
+      "website": "https://www.companyf.com",
+      "image": "company-f.png",
+      "membershipLevel": 3,
+      "description": "A description of Company F"
+    },
+    {
+      "name": "Company G",
+      "address": "123 Elm St, Hindman, KY",
+      "phone": "777-888-9999",
+      "website": "https://www.companyg.com",
+      "image": "company-g.png",
+      "membershipLevel": 1,
+      "description": "A description of Company G"
+    }
+  ]
+  
