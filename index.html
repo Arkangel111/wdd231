@@ -1,136 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timbuktu</title>
-    <meta name="description" content="Timbuktu Chamber of Commerce">
-    <meta name="author" content="Kelly Cornett">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/commerce.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 231 - Web Frontend development - Kelly Cornett</title>
+        <meta name="description" content="WDD 231 - Web Frontend Development - Kelly Cornett.">
+        <meta name="author" content="Kelly Cornett">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 769px)">
+        <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 768px)">     
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/base.js" defer></script>
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/course.js" defer></script>
+    </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="left-header">
-            <img src="images/30x30.png" alt="Logo">
-            <div>
-                <h1>Timbuktu</h1>
-                <h2>Chamber of Commerce</h2>
-            </div>
-        </div>
-        <nav class="right-header">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><span role="button" aria-label="Toggle Light/Dark Mode">🌙</span></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero">
-        <div id="hero-image">
-            <img src="images/Main.png" alt="Hero Image">
-        </div>
+<header>
+        <img src="images/profile.webp" style="height: 30px; margin-right: 10px;">
+        <span>Kelly D. Cornett</span>
+        <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
+</header>
+<nav>
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/chamber.html">Chamber</a></li>
+        <li><a href="https://github.com/Arkangel111/">GitHub Profile</a></li>
+        <li><a href="https://www.linkedin.com/in/kelly-cornett-108a811b5/">LinkedIn</a></li>
+    </ul>
+</nav>
+<main>
+    <h1>Home</h1>
+<div class="two-columns">
+    <section>
+        <h2>Course Work</h2>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </section>
+    <section>
+        <h2>Kentucky, USA</h2>
+        <img src="images/daniel-boone-arch.webp" alt="Kentucky wilds">
+    </section>
+</div>
+<section class="full-width">
+    <h2>Web and Computer Programming Certificate</h2>
+    <div class="filter-buttons">
+        <button onclick="filterCourses('all')">All Courses</button>
+        <button onclick="filterCourses('WDD')">WDD Courses</button>
+        <button onclick="filterCourses('CSE')">CSE Courses</button>
+        <p id="totalCredits">The total number of credits below is 0</p>
+    </div>
+    <div id="courseContainer" class="subjects-container"></div>
+    <script src="base.js"></script>
+    <script src="course.js"></script>
+    <script src="coursesDisplay.js"></script>
+</section>
+</main>
 
-    <!-- Main Content Section -->
-    <main>
-        <h1>Timbuktu</h1> 
-        
-        <section id="home">
-            <p>Home</p>
-            <div class="card-container">
-                <div class="card">
-                    <h2>Events</h2>
-                    <p>Upcoming events and details go here.</p>
-                </div>
-                <div class="card">
-                    <h2>Current Weather</h2>
-                    <p>Display temperature, conditions, etc.</p>
-                </div>
-                <div class="card">
-                    <h2>Weather Forecast</h2>
-                    <p>3-day forecast and details.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Businesses Section -->
-        <section id="businesses">
-            <div class="card-container2">
-                <div class="card2">
-                    <div class="card-header">
-                        <h2><span class="business-name">Business Name</span> <span class="tagline">Business Tag Line</span></h2>
-                    </div>
-                    <div class="card-content">
-                        <img src="images/img.png" alt="Business Image" class="card-image">
-                        <div class="text-content">
-                            <p>EMAIL: info@gmail.com</p>
-                            <p>PHONE: 123-456-7890</p>
-                            <p>URL: mybusiness.com</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Repeat for other businesses -->
-                <div class="card2">
-                    <div class="card-header">
-                        <h2><span class="business-name">Business Name</span> <span class="tagline">Business Tag Line</span></h2>
-                    </div>
-                    <div class="card-content">
-                        <img src="images/img.png" alt="Business Image" class="card-image">
-                        <div class="text-content">
-                            <p>EMAIL: info@gmail.com</p>
-                            <p>PHONE: 123-456-7890</p>
-                            <p>URL: mybusiness.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card2">
-                    <div class="card-header">
-                        <h2><span class="business-name">Business Name</span> <span class="tagline">Business Tag Line</span></h2>
-                    </div>
-                    <div class="card-content">
-                        <img src="images/img.png" alt="Business Image" class="card-image">
-                        <div class="text-content">
-                            <p>EMAIL: info@gmail.com</p>
-                            <p>PHONE: 123-456-7890</p>
-                            <p>URL: mybusiness.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-        <div class="left">
-            <p>Timbuktu Chamber of Commerce</p>
-            <p>Address: 123 Main St, Anytown, USA</p>
-            <p>info@timuktucc.org</p>
-            <p>Phone: (123) 456-7890</p>
-        </div>
-        <div class="middle">
-            <img src="images/yt_logo_rgb_dark.png" alt="Youtube" class="icon">
-            <img src="images/linkedin.png" alt="LinkedIn" class="icon">
-            <img src="images/twitter.png" alt="X" class="icon">
-        </div>
-        <div class="right">
-            <p>WDD231 Class Project</p>
-            <p>Kelly Cornett</p>
-            <p>©️ <span id="currentyear"></span> Timbuktu Chamber of Commerce</p>
-            <p id="lastModified"></p>
-        </div>
-    </footer>
-    
-    <script src="scripts/ccproject.js"></script>
+<footer>
+    <p>©️ <span id="currentyear"></span>🎈 Kelly Cornett 🎈United States</p>
+    <p id="lastModified"></p>
+</footer>
 </body>
 </html>
