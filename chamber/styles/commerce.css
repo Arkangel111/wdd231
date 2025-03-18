@@ -1,0 +1,365 @@
+/*! commerce.css | Custom styles for the Chamber of Commerce website */
+
+/* Header Styles
+   ========================================================================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+.left-header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.left-header h1 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.left-header h2 {
+    margin: 0;
+    font-size: smaller;
+}
+
+.right-header {
+    display: flex;
+    gap: 15px;
+}
+
+.right-header ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+/* Hero Section Styles
+   ========================================================================== */
+#hero {
+    text-align: center;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Main Content Section Styles
+   ========================================================================== */
+main {
+    padding: 20px;
+}
+
+/* Home Section Styles
+   ========================================================================== */
+#home {
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Card styling */
+.card {
+    flex: 1;
+    background-color: #d3d3d3;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Card header styling */
+.card h2 {
+    background-color: #7a7a7a;
+    color: white;
+    padding: 10px;
+    margin: -15px -15px 15px -15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Businesses Section Styles
+   ========================================================================== */
+#businesses {
+    margin-top: 20px;
+}
+
+.card-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Card2 styling */
+.card2 {
+    flex: 1;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Card header styling for card2 */
+.card-header {
+    background-color: #7a7a7a;
+    color: white;
+    padding: 10px;
+}
+
+/* Card content styling */
+.card-content {
+    padding: 15px;
+}
+
+/* Footer Styles
+   ========================================================================== */
+   
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.left, .middle, .right {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+}
+
+.left {
+    width: 30%;
+}
+
+.middle {
+    width: 40%;
+}
+
+.right {
+    width: 30%;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Sections
+   ========================================================================== */
+
+body {
+    margin: 0;
+}
+
+
+main {
+    display: block;
+}
+
+/* Correct the font size and margin on `h1` elements within `section` and
+   article contexts in Chrome, Firefox, and Safari. */
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+img {
+    border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+/* Interactive
+   ========================================================================== */
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}

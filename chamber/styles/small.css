@@ -1,0 +1,172 @@
+/* General Mobile Optimization */
+body {
+    font-size: 16px; /* Ensure text is readable */
+    line-height: 1.5; /* Improve text spacing */
+    padding: 10px;
+    margin: 0;
+    background-color: #1e1e1e; /* Dark background to match larger.css */
+    color: #e0e0e0; /* Text color to match larger.css */
+}
+
+body {
+    font-size: 16px; /* Ensure text is readable */
+    line-height: 1.5; /* Improve text spacing */
+    padding: 10px;
+    margin: 0;
+    background-color: #1e1e1e; /* Dark background to match larger.css */
+    color: #e0e0e0; /* Text color to match larger.css */
+}
+
+/* Make header more compact */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #2e2e2e; /* Darker header background to match larger.css */
+    color: #e0e0e0; /* Text color to match larger.css */
+}
+
+/* Ensure images scale properly */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation Adjustments */
+.nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey; /* Keep this as is for mobile */
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+}
+
+.nav-links li {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-links a {
+    display: block;
+    padding: 10px;
+    color: #f0a500; /* Text color to match larger.css */
+    text-decoration: none;
+}
+
+.nav-links a.active {
+    color: #f0a500;
+    background-color: #2e2e2e;
+}
+
+.nav-links a:hover {
+    background-color: #4e4e4e; /* Hover background color to match larger.css */
+    color: #e0e0e0; /* Hover text color to match larger.css */
+}
+
+/* Show menu when toggled */
+.nav-active {
+    display: flex;
+}
+
+/* Improve button and touch targets */
+button, .menu-toggle {
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Forms and Inputs */
+input, textarea, button {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Ensure tables are scrollable */
+table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+/* Footer Adjustments */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2e2e2e; /* Darker footer background to match larger.css */
+    color: #e0e0e0; /* Text color to match larger.css */
+}
+
+/* Responsive Typography */
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Box Styles */
+main section {
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px 0; /* Added margin for spacing */
+}
+
+
+.card {
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin: 10px 0; /* Added margin for spacing */
+}
+
+
+/* Optimize layout for small screens */
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        margin-top: 10px;
+    }
+
+    .nav-links {
+        top: 50px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
