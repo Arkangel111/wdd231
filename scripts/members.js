@@ -23,7 +23,7 @@ function displayMembers(members) {
 
         memberDiv.innerHTML = `
             <img src="images/${member.image}" alt="${member.name} Logo">
-            <h3>${member.name}</h3>
+            <h2>${member.name}</h3>
             <p><strong>Address:</strong> ${member.address}</p>
             <p><strong>Phone:</strong> ${member.phone}</p>
             <p><strong>Membership Level:</strong> ${getMembershipLevel(member.membershipLevel)}</p>
