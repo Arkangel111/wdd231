@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timbuktu</title>
-    <meta name="description" content="Timbuktu Chamber of Commerce">
+    <title>Hindman</title>
+    <meta name="description" content="Hindman Chamber of Commerce">
     <meta name="author" content="Kelly Cornett">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/commerce.css">
     <link rel="stylesheet" href="styles/normalize.css">
 </head>
@@ -18,7 +19,7 @@
         <div class="left-header">
             <img src="images/30x30.png" alt="Logo">
             <div>
-                <h1>Timbuktu</h1>
+                <h1>Hindman</h1>
                 <h2>Chamber of Commerce</h2>
             </div>
         </div>
@@ -32,17 +33,17 @@
             </ul>
         </nav>
     </header>
-
+    
     <!-- Hero Section -->
     <section id="hero">
         <div id="hero-image">
             <img src="images/Main.png" alt="Hero Image">
         </div>
     </section>
-
+    
     <!-- Main Content Section -->
     <main>
-        <h1>Timbuktu</h1> 
+        <h1>Hindman</h1> 
         
         <section id="home">
             <p>Home</p>
@@ -53,15 +54,18 @@
                 </div>
                 <div class="card">
                     <h2>Current Weather</h2>
-                    <p>Display temperature, conditions, etc.</p>
+                    <p id="town"></p>
+                    <p id="current-temp"></p>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption id="description"></figcaption>
                 </div>
                 <div class="card">
                     <h2>Weather Forecast</h2>
-                    <p>3-day forecast and details.</p>
+                    <div id="forecast"></div>
                 </div>
             </div>
         </section>
-
+        
         <!-- Businesses Section -->
         <section id="businesses">
             <div class="card-container2">
@@ -78,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <!-- Repeat for other businesses -->
                 <div class="card2">
                     <div class="card-header">
@@ -109,17 +113,17 @@
             </div>
         </section>
     </main>
-
+    
     <!-- Footer Section -->
     <footer>
         <div class="left">
-            <p>Timbuktu Chamber of Commerce</p>
+            <p>Hindman Chamber of Commerce</p>
             <p>Address: 123 Main St, Anytown, USA</p>
             <p>info@timuktucc.org</p>
             <p>Phone: (123) 456-7890</p>
         </div>
         <div class="middle">
-            <img src="images/yt_logo_rgb_dark.png" alt="Youtube" class="icon">
+            <img src="images/yt_logo_rgb_dark.jpg" alt="Youtube" class="icon">
             <img src="images/linkedin.png" alt="LinkedIn" class="icon">
             <img src="images/twitter.png" alt="X" class="icon">
         </div>
@@ -132,5 +136,6 @@
     </footer>
     
     <script src="scripts/ccproject.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

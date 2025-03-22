@@ -6,7 +6,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #2e2e2e;
     padding: 10px;
 }
 
@@ -68,9 +68,16 @@ main {
 
 .card-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
     padding: 20px;
+}
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* Card styling */
@@ -93,6 +100,19 @@ main {
     border-top-right-radius: 10px;
 }
 
+.forecast-day {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.forecast-day img {
+    width: 50px;
+}
+
 /* Businesses Section Styles
    ========================================================================== */
 #businesses {
@@ -102,7 +122,15 @@ main {
 .card-container2 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .card-container2 {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* Card2 styling */
@@ -133,11 +161,15 @@ footer {
     background-color: #f0f0f0;
     padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .left, .middle, .right {
-    display: inline-block;
-    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 10px;
 }
 
@@ -160,6 +192,18 @@ footer {
 }
 
 
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Keep text centered */
+    }
+
+    .left, .middle, .right {
+        width: 100%; /* Make each section take up the full width */
+        margin-bottom: 10px; /* Add space between sections */
+    }
+}
+
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -170,6 +214,8 @@ html {
 
 body {
     margin: 0;
+    background-color: #2e2e2e;
+    color: #000;
 }
 
 
@@ -362,4 +408,50 @@ template {
 
 [hidden] {
     display: none;
+}
+
+
+/* Mobile Navigation Styles (Small Screens) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: grey;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+
+    /* Adjust grid for smaller screens */
+    .subjects-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Stack subjects in a single column on extra small screens */
+    .subjects-container {
+        grid-template-columns: 1fr;
+    }
+    .subjects-container .card {
+        width: 100%;
+    }
 }
