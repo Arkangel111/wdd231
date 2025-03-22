@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Function to load external HTML
-function loadHTML(id, url) {
+/* function loadHTML(id, url) {
     fetch(url)
         .then(response => {
             if (!response.ok) {
@@ -34,4 +34,4 @@ function loadHTML(id, url) {
             document.getElementById(id).innerHTML = data;
         })
         .catch(error => console.error('Error loading content:', error));
-}
+} */
