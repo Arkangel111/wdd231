@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/commerce.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta property="og:title" content="Hindman Kentucky Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://arkangel111.github.io/wdd231/chamber/hindman-chamber.jpg">
+    <meta property="og:url" content="https://arkangel111.github.io/wdd231/chamber/">
+    <meta property="og:description" content="Supporting businesses and community growth in Hindman, Kentucky. Join us to network, grow, and thrive!">
+    <meta property="og:site_name" content="Hindman KY Chamber of Commerce">
+    <meta property="og:locale" content="en_US">
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -54,7 +63,7 @@
             <label>
                 Membership Level:
                 <select name="membership_level" required>
-                    <option value="NP">Non-Profit (Free)</option>
+                    <option value="">Non-Profit (Free)</option>
                     <option value="Bronze">Bronze</option>
                     <option value="Silver">Silver</option>
                     <option value="Gold">Gold</option>
@@ -127,18 +136,26 @@
             <p>Includes all Silver perks, plus premium homepage ad space.</p>
         </div>
     </div>
+    <footer>
+        <div class="left">
+            <p>Hindman Chamber of Commerce</p>
+            <p>Address: 123 Main St, Anytown, USA</p>
+            <p>info@timuktucc.org</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="middle">
+            <img src="images/yt_logo_rgb_dark.jpg" alt="Youtube" class="icon">
+            <img src="images/linkedin.png" alt="LinkedIn" class="icon">
+            <img src="images/twitter.png" alt="X" class="icon">
+        </div>
+        <div class="right">
+            <p>WDD231 Class Project</p>
+            <p>Kelly Cornett</p>
+            <p>©️ <span id="currentyear"></span> Hindman Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 
-    <script>
-        document.getElementById("timestamp").value = new Date().toISOString();
-
-        function openModal(id) {
-            document.getElementById(id).style.display = "block";
-        }
-
-        function closeModal(id) {
-            document.getElementById(id).style.display = "none";
-        }
-    </script>
 
 </body>
 </html>
