@@ -24,7 +24,7 @@ main {
 
 /* Section Styles */
 main section {
-    background-color: #2e2e2e;
+    background-color: #f80000;
     color: #e0e0e0;
     padding: 20px;
     border-radius: 10px;
@@ -168,10 +168,14 @@ nav ul {
 .nav-links a {
     display: block;
     text-decoration: none;
-    color: #f0a500;
+    color: #f0a500 !important;
     font-weight: 700;
     padding: 5px 10px;
     text-align: center;
+}
+
+.nav-links a:link {
+    color:#4CAF50
 }
 
 .nav-links a:hover {
@@ -182,8 +186,15 @@ nav ul {
 
 .nav-links a.active {
     display: flex;
-    color: #f0a500;
     background-color: #2e2e2e;
+}
+
+.nav-links a:visited{
+    color: #e0e0e0;
+}
+
+.test {
+    color: #8b0000
 }
 
 /* Header Title */
