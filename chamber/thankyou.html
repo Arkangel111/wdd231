@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="rafting.css">
+</head>
+<body>
+
+    <header>
+        <h1>Thank You for Joining!</h1>
+    </header>
+
+    <main>
+        <h2>Here’s what we received:</h2>
+        <p><strong>First Name:</strong> <span id="first_name"></span></p>
+        <p><strong>Last Name:</strong> <span id="last_name"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Phone:</strong> <span id="phone"></span></p>
+        <p><strong>Business Name:</strong> <span id="business_name"></span></p>
+        <p><strong>Timestamp:</strong> <span id="timestamp"></span></p>
+    </main>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById("first_name").innerText = params.get("first_name");
+        document.getElementById("last_name").innerText = params.get("last_name");
+        document.getElementById("email").innerText = params.get("email");
+        document.getElementById("phone").innerText = params.get("phone");
+        document.getElementById("business_name").innerText = params.get("business_name");
+        document.getElementById("timestamp").innerText = params.get("timestamp");
+    </script>
+
+</body>
+</html>
