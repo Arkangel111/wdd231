@@ -1,0 +1,147 @@
+body {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main section {
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.state {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.state p {
+    flex: 1;
+    margin: 0;
+}
+
+.state img {
+    flex-shrink: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-me p {
+    flex: 1;
+    margin: 0;
+    order: 1;
+}
+
+.about-me img {
+    flex-shrink: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    order: 2;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #f0a500;
+}
+
+h2,
+h3 {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+header {
+    font-size: 1em;
+    font-weight: 400;
+    background-color: #2a2a2a;
+    color: #f0a500;
+}
+
+header h1 {
+    background-color: #4e4e4e;
+    color: #f0a500;
+    padding: 10px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f0a500;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background-color: #4e4e4e;
+    color: #e0e0e0;
+    border-radius: 5px;
+}
+
+
+.card {
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.card a {
+    color: #f0a500;
+}
+
+.card a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+img {
+    border: 1px solid #f0a500;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+}

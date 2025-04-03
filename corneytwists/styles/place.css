@@ -1,0 +1,159 @@
+/* Base styles */
+:root {
+    --primary-color: maroon;
+    --secondary-color: #eaeaea;
+    --font-color: white;
+    --background-color: black;
+    --border-color: #ccc;
+    --heading-font-size: 18px;
+    --padding: 1em;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+header {
+    text-align: center;
+    padding: var(--padding);
+    background-color: var(--primary-color);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: var(--padding);
+    background-color: var(--background-color);
+}
+
+.data,
+.weather {
+    position: absolute;
+    background: rgba(255, 255, 255, .9);
+    flex: 1 1 25%;
+    padding: var(--padding);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.data {
+    top: 20%;
+    left: 5%;
+}
+
+.weather {
+    bottom: 10%;
+    right: 5%;
+}
+
+.data h2,
+.weather h2 {
+    margin: 0;
+    font-size: var(--heading-font-size);
+    background: var(--primary-color);
+    color: var(--font-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: left;
+    position: relative;
+    left: -30px;
+    width: calc(100% + 20px);
+}
+
+.data h2::after,
+.weather h2::after {
+    content: "";
+    font-size: 1.2rem;
+    color: var(--font-color);
+    margin-left: 8px;
+}
+
+.data ul,
+.weather ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Default: Wide View */
+.weather-icon.mobile-view {
+    display: none;
+}
+
+.weather-icon.wide-view {
+    display: inline;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .weather-icon.wide-view {
+        display: none;
+    }
+
+    .weather-icon.mobile-view {
+        width: 30px;
+        height: auto;
+        display: inline;
+    }
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+footer {
+    text-align: center;
+    padding: var(--padding);
+    background-color: var(--primary-color);
+    position: relative;
+    z-index: 3;
+}
+
+/* Wide screen (desktop) */
+@media (min-width: 768px) {
+    .image #Japan-castle-wide {
+        display: block;
+    }
+
+    .image #Japan-needle-mobile {
+        display: none;
+    }
+
+    /* Narrow screen (mobile) */
+    @media (max-width: 767px) {
+        main {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .data,
+        .weather {
+            flex: 1 1 100%;
+        }
+
+        .image #Japan-castle-wide {
+            display: none;
+        }
+
+        .image #Japan-needle-mobile {
+            display: block;
+        }
+    }
+}
