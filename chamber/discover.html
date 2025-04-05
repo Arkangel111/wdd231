@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Frontend development - Kelly Cornett</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development - Kelly Cornett.">
+    <meta name="author" content="Kelly Cornett">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <meta property="og:title" content="Hindman Kentucky Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="chamber/images/hindman-chamber.jpg">
+    <meta property="og:url" content="chamber/directory.html">
+    <meta property="og:description" content="Supporting businesses and community growth in Hindman, Kentucky. Join us to network, grow, and thrive!">
+    <meta property="og:site_name" content="Hindman KY Chamber of Commerce">
+    <meta property="og:locale" content="en_US">
+
+</head>
+<body>
+    <header>
+        <div class="left-header">
+        <img src="images/30x30.png" alt="Logo">
+        <div>
+            <h1>Hindman Chamber of Commerce</h1>
+            <div id="sidebar-content"></div>
+        </div>
+    </div>
+    <button class="menu-toggle">☰</button>
+
+    <nav class="right-header">
+        <ul class ="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><span role="button" aria-label="Toggle Light/Dark Mode">🌙</span></li>
+        </ul>
+    </nav>
+    </header>
+    <div class="cards-grid">
+        <div class="card" id="card1">
+          <h2>Appalachian Artisan Center</h2>
+          <figure><img src="images/hindman1.jpg" alt="Appalachian Artisan Center"></figure>
+          <address>30 Main St, Hindman, KY 41822</address>
+          <p>A hub for artists and craftspeople to showcase traditional Appalachian art and music.</p>
+          <button>Learn More</button>
+        </div>
+      
+        <div class="card" id="card2">
+          <h2>Breaks Interstate Park</h2>
+          <figure><img src="images/hindman2.jpg" alt="Breaks Interstate Park"></figure>
+          <address>627 Commission Cir, Breaks, VA 24607</address>
+          <p>Known as the 'Grand Canyon of the South,' with stunning views and hiking trails.</p>
+          <button>Learn More</button>
+        </div>
+      
+        <div class="card" id="card3">
+          <h2>Kentucky Reptile Zoo</h2>
+          <figure><img src="images/hindman3.jpg" alt="Kentucky Reptile Zoo"></figure>
+          <address>200 L&amp;E Railroad Pl, Slade, KY 40376</address>
+          <p>A fascinating collection of snakes and reptiles, offering venom extractions for research.</p>
+          <button>Learn More</button>
+        </div>
+      
+        <div class="card" id="card4">
+          <h2>Red River Gorge Geological Area</h2>
+          <figure><img src="images/hindman4.jpg" alt="Red River Gorge Geological Area"></figure>
+          <address>3451 Sky Bridge Rd, Stanton, KY 40380</address>
+          <p>A natural playground of cliffs, arches, and hiking trails for outdoor enthusiasts.</p>
+          <button>Learn More</button>
+        </div>
+      
+        <div class="card" id="card5">
+          <h2>Camp Nathanael</h2>
+          <figure><img src="images/hindman5.jpg" alt="Camp Nathanael"></figure>
+          <address>134 Pike Branch, Emmalena, KY 41740</address>
+          <p>Christian-based camp offering year-round programs for youth and families.</p>
+          <button>Learn More</button>
+        </div>
+      
+        <div class="card" id="card6">
+          <h2>Knott County Sportsplex</h2>
+          <figure><img src="images/hindman6.jpg" alt="Knott County Sportsplex"></figure>
+          <address>450 Kenny Champion Loop #8765, Leburn, KY 41831</address>
+          <p>A large indoor facility with courts, turf, fitness center, and events.</p>
+          <button>Learn More</button>
+        </div>
+      
+        <div class="card" id="card7">
+          <h2>SUP Kentucky</h2>
+          <figure><img src="images/hindman7.jpg" alt="SUP Kentucky"></figure>
+          <address>2770 Nada Tunnel Rd, Stanton, KY 40380</address>
+          <p>Guided stand-up paddleboarding tours through caves and scenic rivers.</p>
+          <button>Learn More</button>
+        </div>
+      
+        <div class="card" id="card8">
+          <h2>Natural Tunnel State Park</h2>
+          <figure><img src="images/hindman8.jpg" alt="Natural Tunnel State Park"></figure>
+          <address>1420 Natural Tunnel Pkwy, Duffield, VA 24244</address>
+          <p>A massive naturally formed cave tunnel, perfect for exploration and scenic views.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+    <footer>
+        <div class="left">
+            <p>Hindman Chamber of Commerce</p>
+            <p>Address: 123 Main St, Anytown, USA</p>
+            <p>info@timuktucc.org</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="center">
+            <img src="images/yt_logo_rgb_dark.jpg" alt="Youtube" class="icon">
+            <img src="images/linkedin.png" alt="LinkedIn" class="icon">
+            <img src="images/twitter.png" alt="X" class="icon">
+        </div>
+        <div class="right">
+            <p>WDD231 Class Project</p>
+            <p>Kelly Cornett</p>
+            <p>©️ <span id="currentyear"></span> Hindman Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+
+    
+</body>
+<script src="scripts/date.js" defer></script>
+<script src="scripts/navigation.js" defer></script>
+<script src="scripts/script.js" defer></script>
+<script src="scripts/visit.js" defer></script>
+
+</html>

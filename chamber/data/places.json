@@ -1,0 +1,51 @@
+[
+    {
+      "title": "Appalachian Artisan Center",
+      "image": "images/hindman1.jpg",
+      "address": "30 Main St, Hindman, KY 41822",
+      "description": "A hub for artists and craftspeople to showcase traditional Appalachian art and music."
+    },
+    {
+      "title": "Breaks Interstate Park",
+      "image": "images/hindman2.jpg",
+      "address": "627 Commission Cir, Breaks, VA 24607",
+      "description": "Known as the 'Grand Canyon of the South,' with stunning views and hiking trails."
+    },
+    {
+      "title": "Kentucky Reptile Zoo",
+      "image": "images/hindman3.jpg",
+      "address": "200 L&E Railroad Pl, Slade, KY 40376",
+      "description": "A fascinating collection of snakes and reptiles, offering venom extractions for research."
+    },
+    {
+      "title": "Red River Gorge Geological Area",
+      "image": "images/hindman4.jpg",
+      "address": "3451 Sky Bridge Rd, Stanton, KY 40380",
+      "description": "A natural playground of cliffs, arches, and hiking trails for outdoor enthusiasts."
+    },
+    {
+      "title": "Camp Nathanael",
+      "image": "images/hindman5.jpg",
+      "address": "134 Pike Branch, Emmalena, KY 41740",
+      "description": "Christian-based camp offering year-round programs for youth and families."
+    },
+    {
+      "title": "Knott County Sportsplex",
+      "image": "images/hindman6.jpg",
+      "address": "450 Kenny Champion Loop #8765, Leburn, KY 41831",
+      "description": "A large indoor facility with courts, turf, fitness center, and events."
+    },
+    {
+      "title": "SUP Kentucky",
+      "image": "images/hindman7.jpg",
+      "address": "2770 Nada Tunnel Rd, Stanton, KY 40380",
+      "description": "Guided stand-up paddleboarding tours through caves and scenic rivers."
+    },
+    {
+      "title": "Natural Tunnel State Park",
+      "image": "images/hindman8.jpg",
+      "address": "1420 Natural Tunnel Pkwy, Duffield, VA 24244",
+      "description": "A massive naturally formed cave tunnel, perfect for exploration and scenic views."
+    }
+  ]
+  

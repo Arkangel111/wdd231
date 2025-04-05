@@ -1,172 +1,147 @@
-/* General Mobile Optimization */
+/* --- MOBILE STYLES (max-width: 768px) --- */
 body {
-    font-size: 16px; /* Ensure text is readable */
-    line-height: 1.5; /* Improve text spacing */
+    font-size: 16px;
+    line-height: 1.5;
     padding: 10px;
-    margin: 0;
-    background-color: #1e1e1e; /* Dark background to match larger.css */
-    color: #e0e0e0; /* Text color to match larger.css */
 }
 
-body {
-    font-size: 16px; /* Ensure text is readable */
-    line-height: 1.5; /* Improve text spacing */
+/* Mobile navigation styles */
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
     padding: 10px;
-    margin: 0;
-    background-color: #1e1e1e; /* Dark background to match larger.css */
-    color: #e0e0e0; /* Text color to match larger.css */
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 100;
+    font-size: 1.5rem;
 }
 
-/* Make header more compact */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #2e2e2e; /* Darker header background to match larger.css */
-    color: #e0e0e0; /* Text color to match larger.css */
-}
-
-/* Ensure images scale properly */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Navigation Adjustments */
 .nav-links {
     display: none;
     flex-direction: column;
-    align-items: center;
-    background-color: grey; /* Keep this as is for mobile */
-    width: 100%;
+    background-color: #333;
     position: absolute;
     top: 60px;
     left: 0;
-    padding: 10px 0;
-}
-
-.nav-links li {
-    padding: 10px;
     width: 100%;
-    text-align: center;
+    padding: 10px 0;
+    z-index: 99;
+    transition: all 0.3s ease;
 }
 
 .nav-links a {
-    display: block;
-    padding: 10px;
-    color: #f0a500; /* Text color to match larger.css */
+    color: white;
     text-decoration: none;
+    padding: 3px 20px;
+    margin: 2px 0;
+    transition: background-color 0.3s ease;
 }
 
-.nav-links a.active {
-    color: #f0a500;
-    background-color: #2e2e2e;
-}
-
-.nav-links a:hover {
-    background-color: #4e4e4e; /* Hover background color to match larger.css */
-    color: #e0e0e0; /* Hover text color to match larger.css */
-}
-
-/* Show menu when toggled */
 .nav-active {
     display: flex;
 }
 
-/* Improve button and touch targets */
-button, .menu-toggle {
-    padding: 10px;
-    font-size: 18px;
-    cursor: pointer;
+/* Stack two-column layout vertically */
+.two-columns {
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Forms and Inputs */
-input, textarea, button {
-    font-size: 16px;
-    padding: 10px;
+.two-columns section {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-/* Ensure tables are scrollable */
-table {
-    width: 100%;
-    overflow-x: auto;
-    display: block;
+/* Stack certificates */
+.certificate-section {
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Footer Adjustments */
-footer {
+.certificate-section section {
+    width: 90%;
+}
+
+/* Subjects layout for small screens */
+.subjects-container {
+    grid-template-columns: 1fr;
+}
+
+/* About me and state sections */
+.state,
+.about-me {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 10px;
-    background-color: #2e2e2e; /* Darker footer background to match larger.css */
-    color: #e0e0e0; /* Text color to match larger.css */
 }
 
-/* Responsive Typography */
-h1 {
-    font-size: 22px;
+.about-me h2,
+.about-me p {
+    margin: 10px 0;
 }
 
-h2 {
-    font-size: 20px;
+header {
+    position: relative;
 }
-
-p {
-    font-size: 16px;
-}
-
-/* Box Styles */
-main section {
-    background-color: #2e2e2e;
-    color: #e0e0e0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    margin: 10px 0; /* Added margin for spacing */
-}
-
-
-.card {
-    background-color: #2e2e2e;
-    color: #e0e0e0;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
-    text-align: center;
-    margin: 10px 0; /* Added margin for spacing */
-}
-
-
-/* Optimize layout for small screens */
-@media (max-width: 480px) {
-    body {
-        padding: 5px;
-    }
-
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
+/* Mobile styles */
+/* --- RESPONSIVE BREAKPOINTS --- */
+@media (max-width: 768px) {
     .menu-toggle {
-        margin-top: 10px;
+        display: block;
+        font-size: 2rem;
     }
-
+    
     .nav-links {
-        top: 50px;
+        background-color: grey;
     }
 
-    h1 {
-        font-size: 20px;
-    }
-
-    h2 {
-        font-size: 18px;
+    .subjects-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (max-width: 480px) {
+    .subjects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-section {
+      margin-bottom: 20px;
+    }
+  }
+  /* ===== SMALL SCREENS (320px - 640px) ===== */
+@media (max-width: 640px) {
+    .cards-grid {
+      grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+      grid-template-columns: 1fr;
+    }
+    #card1 { grid-area: card1; }
+    #card2 { grid-area: card2; }
+    #card3 { grid-area: card3; }
+    #card4 { grid-area: card4; }
+    #card5 { grid-area: card5; }
+    #card6 { grid-area: card6; }
+    #card7 { grid-area: card7; }
+    #card8 { grid-area: card8; }
+  }
+  

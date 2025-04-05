@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #f0a500;
+  --secondary-color: #2e2e2e;
+  --accent-color: #4e4e4e;
+  --background-dark: #1e1e1e;
+  --text-light: #e0e0e0;
+  --success: #4CAF50;
+  --error: #f44336;
+
+  --font-main: "Roboto", serif;
+  --border-radius: 10px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+}
