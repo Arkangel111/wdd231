@@ -30,7 +30,7 @@ nav ul li {
 
 nav ul li a {
     font-size: 1.2em;
-    color: #7300ff; 
+    color: #440097; 
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
@@ -182,7 +182,7 @@ section ul li {
 
 .promo-left h3, .promo-right h3 {
     font-size: 1.4em;
-    color: #1976d2; /* Blue */
+    color: #14579b; /* Blue */
     margin-bottom: 10px;
 }
 
@@ -527,3 +527,19 @@ img {
     margin: 0 auto;
     max-width: 1000px;
   }
+/* Only disable pointer-events on empty day cells, not event elements */
+.fc-daygrid-day a:not(.fc-event),
+.fc-timegrid-col a:not(.fc-event) {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: inherit;
+}
+/* Make calendar date links not look like broken links */
+.fc-daygrid-day-number,
+.fc-col-header-cell-cushion {
+  pointer-events: none;
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
+}
