@@ -52,4 +52,19 @@
       background-repeat: repeat;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* optional shadow for contrast */
     }
+    .elfsight-app-98d53c97-264e-4db8-9511-1c159534beff {
+      min-height: 60px;
+  }
+  @media screen and (max-width: 768px) {
+    main {
+      padding-top: 5rem; /* Give a bit more space on smaller screens */
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  }
   }

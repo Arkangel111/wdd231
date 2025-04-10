@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const lastModified = document.lastModified;
             if (lastModifiedElement) {
-                lastModifiedElement.textContent = "Last Modified: " + lastModified;
+                lastModifiedElement.textContent = `Last Modified: ${lastModified}`;
             }
         });
 });

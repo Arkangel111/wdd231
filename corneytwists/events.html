@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upcoming Events</title>
+  <link rel="stylesheet" href="styles/corneytwists.css">
+  <link rel="stylesheet" href="styles/corneysmall.css" media="screen and (max-width: 768px)">
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta property="og:title" content="CorneyTwists">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/Balloon-animal1.jpg">
+  <meta property="og:url" content="corneytwists/corneytwists.html">
+  <meta property="og:description" content="Veteran Owned and Operated Balloon Twisting Business. For all your party needs.">
+  <meta property="og:site_name" content="CorneyTwists">
+  <meta property="og:locale" content="en_US">
+  
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <main>
+    <h1>Upcoming Events</h1>
+    <div id="calendar"></div>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <dialog id="event-modal">
+    <h2 id="modal-title"></h2>
+    <p><strong>Date:</strong> <span id="modal-date"></span></p>
+    <p><strong>Location:</strong> <span id="modal-location"></span></p>
+    <p><strong>Type:</strong> <span id="modal-type"></span></p>
+    <p><strong>Description:</strong> <span id="modal-description"></span></p>
+    <button onclick="document.getElementById('event-modal').close()">Close</button>
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <script type="module" src="scripts/events.js" defer></script>
+</body>
+</html>
