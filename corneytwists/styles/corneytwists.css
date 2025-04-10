@@ -6,7 +6,7 @@
 }
 /* Navigation Bar */
 nav {
-    background-color: #869173; 
+    background-color: #be50d9; 
     padding: 15px 0;
     position: fixed;
     width: 100%;
@@ -30,7 +30,7 @@ nav ul li {
 
 nav ul li a {
     font-size: 1.2em;
-    color: #73d3f9; 
+    color: #7300ff; 
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;

@@ -1,0 +1,55 @@
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .hero-container {
+      position: relative;
+      display: block; /* stack items vertically */
+      text-align: center;
+    }
+  
+    .hero-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      position: relative;
+      z-index: 1; /* behind the title */
+    }
+  
+    /* Hide the second image on small screens */
+    .hero-image:nth-of-type(1) {
+      display: none;
+    }
+  
+    .hero-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Dancing Script', cursive;
+      font-size: 6em;
+      font-weight: bold;
+      text-align: center;
+      z-index: 2; /* on top of the image */
+      padding: 0 10px;
+    }
+  
+    .hero-title span {
+      display: inline-block;
+      background: linear-gradient(
+        90deg,
+        #ff0000,
+        #ff7f00,
+        #ffff00,
+        #00ff00,
+        #0000ff,
+        #4b0082,
+        #9400d3
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      background-size: 100%;
+      background-repeat: repeat;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* optional shadow for contrast */
+    }
+  }
